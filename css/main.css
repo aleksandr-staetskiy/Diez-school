@@ -1,0 +1,89 @@
+body {
+	font-size: 16px;
+	color: #f9fcfc;
+	font-family: 'Prata', serif;
+}
+
+/*promo section*/
+
+.promo {
+	background: url(../img/main-bg.png)no-repeat top ;
+	background-size: 100%;
+}
+
+.promo__title {
+	margin-top: 200px;
+}
+
+.promo__text {
+	padding-bottom: 200px;
+}
+
+/*header section*/
+
+.logo {
+	padding-top: 23px;
+}
+
+.header__nav {
+	padding-top: 44px;
+}
+
+.header__logo {
+	font-size: 30px;
+	color: #eec643;
+}
+
+.header__list {
+	list-style: none;
+	display: flex;
+}
+
+.header__link {
+	margin-left: 14px;
+	color: #021a23;
+	text-transform: uppercase;
+	font-size: 14px;
+	
+}
+
+/*direction section*/
+
+.wrap-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.direction__title {
+	color: #021a23;
+	transform: rotate(270deg);
+	position: absolute;
+
+}
+
+.direction-card {
+	background: url(../img/directions_card_img_1.png)no-repeat;
+	background-size: 100%;
+}
+
+.direction-card__inner {
+	margin-left: 23px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.direction-card__text {
+	width: 220px;
+}
+
+.direction-card__price {
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
