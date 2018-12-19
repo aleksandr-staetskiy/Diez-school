@@ -1,84 +1,103 @@
 body {
-	font-size: 16px;
-	color: #f9fcfc;
 	font-family: 'Prata', serif;
+	color: #fff;
+} 
+
+select {
+	display: block;
 }
 
-/*promo section*/
+input {
+	border: hidden;
+	border-bottom: 1px solid black;
 
-.promo {
-	background: url(../img/main-bg.png)no-repeat top ;
-	background-size: 100%;
 }
 
-.promo__title {
-	margin-top: 200px;
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
 }
 
-.promo__text {
-	padding-bottom: 200px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
-/*header section*/
+.col {
+  padding-left: 15px;
+  padding-right: 15px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.col--lg-1 { width: 25%; }
+.col--lg-2 { width: 50%; }
+.col--lg-3 { width: 75%; }
+.col--lg-4 { width: 100%; }
+
+/*header*/
 
 .logo {
-	padding-top: 23px;
-}
-
-.header__nav {
-	padding-top: 44px;
+	margin-top: 33px;
 }
 
 .header__logo {
 	font-size: 30px;
+	text-decoration: none;
 	color: #eec643;
 }
 
-.header__list {
+
+.ml-auto {
+	margin-left: auto;
+}
+
+.main-nav {
+	margin-top: 50px;
+}
+
+.main-nav__list {
 	list-style: none;
 	display: flex;
+	justify-content: flex-end;
 }
 
-.header__link {
-	margin-left: 14px;
-	color: #021a23;
+.main-nav__item {
+	margin-left: 20px;
+}
+
+.main-nav__link {
+	white-space: nowrap;
+	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 14px;
-	
-}
-
-/*direction section*/
-
-.wrap-wrap {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.direction__title {
 	color: #021a23;
-	transform: rotate(270deg);
-	position: absolute;
-
 }
 
-.direction-card {
-	background: url(../img/directions_card_img_1.png)no-repeat;
+.promo__title {
+	width: 600px;
+	margin-top: 200px;
+}
+
+.promo__text {
+	width: 420px;
+}
+
+.promo__form-txt {
+	width: 200px;
+}
+
+.promo {
+	background: url(../img/main-bg.png) no-repeat;
 	background-size: 100%;
 }
 
-.direction-card__inner {
-	margin-left: 23px;
-	padding-top: 10px;
-	padding-bottom: 20px;
-}
 
-.direction-card__text {
-	width: 220px;
-}
 
-.direction-card__price {
-	font-weight: bold;
-}
 
 
 
