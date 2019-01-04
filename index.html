@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Diez~school</title>
 	<link href="https://fonts.googleapis.com/css?family=Prata&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+	<link rel="stylesheet" href="css/jquery.modal.min.css">
 	<link rel="stylesheet" href="css/normalize-css.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -16,23 +19,33 @@
 					<div class="col  col--lg-1  logo">
 						<a href="" class="header__logo">Diez</a>
 					</div>
-					<div class="col  col--lg-2  ml-auto">
-						<nav class="main-nav">
-							<ul class="main-nav__list">
-								<li class="main-nav__item">
-									<a href="" class="main-nav__link">направления</a>
-								</li>
-								<li class="main-nav__item">
-									<a href="" class="main-nav__link">о школе</a>
-								</li>
-								<li class="main-nav__item">
-									<a href="" class="main-nav__link">видео</a>
-								</li>
-								<li class="main-nav__item">
-									<a href="" class="main-nav__link">контакты</a>
-								</li>
+				<!-- desktop menu here -->
+					<div class="col-lg-5 ml-auto">
+						<nav class="header__nav">
+							<ul class="header__list">
+								<li class="header__item"><a href="" class="header__link">направления</a></li>
+								<li class="header__item"><a href="" class="header__link">школа</a></li>
+								<li class="header__item"><a href="" class="header__link">видео</a></li>
+								<li class="header__item"><a href="" class="header__link">контакты</a></li>
 							</ul>
 						</nav>
+					</div>
+					<!-- hamburger menu here -->
+					<div class="col  col--lg-3">
+						<div class="menu">
+						    <div class="menu__icon">
+							    <span></span>
+							    <span></span>
+							    <span></span>
+							    <span></span>
+						    </div>
+						    <div class="menu__links">
+						        <a class="menu__links-item" href="#">направления</a>
+						        <a class="menu__links-item" href="#">Item 2</a>
+						        <a class="menu__links-item" href="#">Item 2</a>
+						        <a class="menu__links-item" href="#">Item 2</a>
+						    </div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -45,24 +58,58 @@
 						<p>Научим петь, играть на инструментах, не бояться сцены и получать удовольствие от музыки</p>
 					</div>
 				</div>
+
 				<div class="col  col--lg-1  col--md-3  col--sm-3">
-					<form action="" class="promo__form">
-						<div class="form__wrap">
-							<h2 class="promo__form-title">Вводный урок</h2>
-							<div class="promo__form-txt">
-								<p>Попробуй любые направления бесплатно</p>
-							</div>
-							<input type="text" placeholder="Имя">
-							<input type="tel" placeholder="Телефон">
-							<select name="search">
-								<optgroup label="">
-									<option value="directions">Гитара</option>
-									<option value="directions">Вокал</option>
+					<div class="form__desktop">
+						<form action="" class="promo__form">
+							<div class="form__wrap">
+								<h2 class="promo__form-title">Вводный урок</h2>
+								<div class="promo__form-txt">
+									<p>Попробуй любые направления бесплатно</p>
+								</div>
+								<input type="text" placeholder="Имя">
+								<input type="tel" placeholder="Телефон">
+								<select name="search">
+									<optgroup label="">
+										<option value="directions">Гитара</option>
+										<option value="directions">Вокал</option>
 								</optgroup>
-							</select>
+								</select>
+							</div>
+							<button type="submit" class="form__btn">записаться</button>
+						</form>
+					</div>
+
+					<!-- Modal HTML embedded directly into document -->
+
+					<div class="modal__form">
+						<div id="ex1" class="modal">
+					  		<p>Thanks for clicking. That felt good.</p>
+					  		<a href="#" rel="modal:close">
+					  		<form action="" class="promo__form">
+								<div class="form__wrap">
+									<h2 class="promo__form-title">Вводный урок</h2>
+										<div class="promo__form-txt">
+											<p>Попробуй любые направления бесплатно</p>
+										</div>
+										<input type="text" placeholder="Имя">
+										<input type="tel" placeholder="Телефон">
+										<select name="search">
+											<optgroup label="">
+												<option value="directions">Гитара</option>
+												<option value="directions">Вокал</option>
+											</optgroup>
+										</select>
+								</div>
+								<button type="submit" class="form__btn">записаться</button>
+							</form>
 						</div>
-						<button type="submit" class="form__btn">записаться</button>
-					</form>
+
+						<!-- Link to open the modal -->
+
+						<a href="#ex1" rel="modal:open" class="modal__btn">вводный урок</a>		
+					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -165,7 +212,7 @@
 						</div>
 					</div>
 	               
-	                <div class="col  col--lg-1  col--sm-1">
+	                <div class="col  col--lg-1">
 						<form action="" class="promo__form  promo__form--in-features">
 							<div class="form__wrap">
 								<h2 class="promo__form-title">Вводный урок</h2>
@@ -195,15 +242,35 @@
 					<h2 class="directions__title">В стенах школы</h2>
 				</div>
 				<div class="row">
-					<div class="col col--lg-3  col--lg-pl">
-						<iframe width="100%" height="98%" src="https://www.youtube.com/embed/WMxZnvM6vE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="row videos--disabled">
+						<div class="col col--lg-3  col--lg-pl">
+							<iframe width="100%" height="98%" src="https://www.youtube.com/embed/WMxZnvM6vE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="col col--lg-1">
+							<iframe width="100%" height="30%" src="https://www.youtube.com/embed/Nxnze_WWjuY?list=PLDhDtBqhok6eUSSC3CGkddISxW07luzXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+							<iframe width="100%" height="30%" src="https://www.youtube.com/embed/xRPCgeJmuq0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+							<iframe width="100%" height="30%" src="https://www.youtube.com/embed/Y6G9jxfgVG4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
 					</div>
-					<div class="col col--lg-1">
-						<iframe width="100%" height="30%" src="https://www.youtube.com/embed/Nxnze_WWjuY?list=PLDhDtBqhok6eUSSC3CGkddISxW07luzXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-						<iframe width="100%" height="30%" src="https://www.youtube.com/embed/xRPCgeJmuq0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-						<iframe width="100%" height="30%" src="https://www.youtube.com/embed/Y6G9jxfgVG4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="videos__mobile-slider">
+						<div class="row">
+							<div class="col col--sm-4">
+								<div class="your-class">
+									<div>
+										<iframe width="300px" height="300px" src="https://www.youtube.com/embed/WMxZnvM6vE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+									<div>
+										<iframe width="300px" height="300px" src="https://www.youtube.com/embed/Nxnze_WWjuY?list=PLDhDtBqhok6eUSSC3CGkddISxW07luzXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+									<div>
+										<iframe width="300px" height="300px" src="https://www.youtube.com/embed/xRPCgeJmuq0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -241,6 +308,7 @@
 							<button type="submit" class="form__btn features__form-btn">записаться</button>
 						</form>
 					</div>
+					<a href="#ex1" rel="modal:open" class="modal__btn  modal__dtn--contacts-section">вводный урок</a>	
 				</div>
 			</div>
 		</section>
@@ -262,7 +330,17 @@
 				</div>
 			</div>
 		</footer>
-
-
+	<script src="js/jquery-3.3.1.min (1).js"></script>	
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.modal.min.js"></script>	
+	<script src="js/script.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $('.your-class').slick({
+			arrows: true
+		  });
+		});
+	  </script>
 </body>
 </html>
