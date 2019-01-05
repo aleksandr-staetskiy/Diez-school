@@ -446,6 +446,11 @@ iframe {
 		display: none;
 	} */
 
+	.promo {
+		background: url(../img/bg_mobile.jpg) no-repeat;
+		background-size: cover;
+	}
+
 	.header__nav {
 		display: none;
 	}
@@ -480,6 +485,22 @@ iframe {
 	.directions__card {
 		height: 171px;
 		margin-bottom: 15px;
+	}
+
+	.directions--order-1 {
+		order: 1;
+	}
+
+	.directions--order-2 {
+		order: 2;
+	}
+
+	.directions--order-3 {
+		order: 3;
+	}
+
+	.directions--order-4 {
+		order: 4;
 	}
 
 	.directions__title-wrap {
@@ -541,7 +562,6 @@ iframe {
     text-decoration: none;
     text-transform: uppercase;
     color: #f9fcfc;
-    border: 1px solid black;
     width: 90%;
     background: #eec643;
     padding: 20px;
@@ -576,6 +596,56 @@ iframe {
 
 .videos__mobile-slider {
 	display: block;
+}
+
+.videos__card {
+	display: block;
+	text-decoration: none;
+	background: url(../img/video_card_img_1.jpg);
+	background-size: cover;
+	height: 182px;
+	padding: 0px 15px 0px 15px; 
+}
+
+.videos__card-title {
+	margin: 0;
+	color: #f9fcfc;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.videos__card-text {
+	margin-top: 8px;
+	color: #f9fcfc;
+}
+
+.videos__play {
+	margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.videos__card--violin {
+	background: url(../img/video_card_img_2.jpg)
+}
+
+.videos__card--summer {
+	background: url(../img/video_card_img_3.jpg)
+}
+
+.videos__card--horse {
+	background: url(../img/video_card_img_4.jpg)
+}
+
+
+.slick-prev {
+    background: #f0d26c;
+	border-radius: 50px;
+}
+
+.slick-next {
+    background: #f0d26c;
+	border-radius: 50px;
 }
    
   .menu {
@@ -677,6 +747,10 @@ iframe {
     padding: 10px 0;
     text-align: center;
     color: #ffffff;
+  }
+
+  .footer {
+	  display: none;
   }
 
 }
