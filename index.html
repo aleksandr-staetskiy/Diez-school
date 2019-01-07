@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Diez~school</title>
 	<link href="https://fonts.googleapis.com/css?family=Prata&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
@@ -41,10 +42,10 @@
 							    <span></span>
 						    </div>
 						    <div class="menu__links">
-						        <a class="menu__links-item" href="#">направления</a>
-						        <a class="menu__links-item" href="#">о школе</a>
-						        <a class="menu__links-item" href="#">видео</a>
-						        <a class="menu__links-item" href="#">контакты</a>
+						        <a class="menu__links-item  wow fadeInDown" href="#">направления</a>
+						        <a class="menu__links-item  wow fadeInDown" href="#">о школе</a>
+						        <a class="menu__links-item  wow fadeInDown" href="#">видео</a>
+						        <a class="menu__links-item  wow fadeInDown" href="#">контакты</a>
 						    </div>
 						</div>
 					</div>
@@ -54,7 +55,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col  col--lg-3  col--md-7  col--sm-4">
-					<h1 class="promo__title  wow fadeInUp">Diez — школа музыкального искусства</h1>
+					<h1 class="promo__title  wow fadeInUp"><span class="promo__title--mobile-off">Diez — школа</span><span class="promo__title--mobile-on">Школа</span> музыкального искусства</h1>
 					<div class="promo__text  wow fadeInUp" data-wow-duration="2s">
 						<p>Научим петь, играть на инструментах, не бояться сцены и получать удовольствие от музыки</p>
 					</div>
@@ -241,7 +242,38 @@
 				<div class="directions__title-wrap">
 					<h2 class="directions__title">В стенах школы</h2>
 				</div>
-				<div class="row">
+
+				<div class="row videos--switcher-desktop">
+					<div class="col col--lg-3  col--lg-pl">
+						<a href="" class="video__card">
+							<h5 class="video__card-title  video__card-title--first">Зимняя вишня</h5>
+							<p class="video__card-text  video__card-text--first">Заключительный зимний концерт 2017 года
+								выступало 97 учеников</p>
+							<img src="./img/play button.png" alt="" class="video__play  video__play--first">
+						</a>	
+					</div>
+					<div class="col col--lg-1">
+						<a href="" class="video__card  video__card--violin">
+							<img src="./img/play button.png" alt="" class="video__play">
+							<h5 class="video__card-title">Янг Чжо</h5>
+							<p class="video__card-text">Репетиция сольной партии скрипки</p>
+						</a>
+						<a href="" class="video__card  video__card--summer">
+							<img src="./img/play button.png" alt="" class="video__play">
+							<h5 class="video__card-title">Летний штиль</h5>
+							<p class="video__card-text">За кулисами концерта</p>
+						</a>
+						<a href="" class="video__card  video__card--horse">
+							<img src="./img/play button.png" alt="" class="video__play">
+							<h5 class="video__card-title">Сергей Трофимов</h5>
+							<p class="video__card-text">ЛЮБЭ — Выйду в поле с конем</p>
+						</a>			
+					</div>
+				</div>
+
+
+
+				<div class="row  videos--switcher">
 					<div class="col col--sm-4">
 						<div class="your-class">
 
