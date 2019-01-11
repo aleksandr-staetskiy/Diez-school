@@ -597,18 +597,18 @@ input {
 	}
 
 	.features__card--staff {
-		background: url(../img/advantages_card_img_1.png)no-repeat;
+		background: url(../img/advantages_card_mob_1.jpg)no-repeat;
 		background-size: cover;
 	}
 
 	.features__card--result {
-		background: url(../img/advantages_card_img_2.jpg)no-repeat;
+		background: url(../img/advantages_card_mob_2.jpg)no-repeat;
 		background-size: cover;
 
 	}
 
 	.features__card--studio {
-		background: url(../img/advantages_card_img_3.jpg)no-repeat;
+		background: url(../img/advantages_card_mob_3.jpg)no-repeat;
 		background-size: cover;
 	}
 
